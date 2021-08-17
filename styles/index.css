@@ -1,0 +1,345 @@
+html {
+    scroll-behavior: smooth;
+  }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    padding:0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 9999;
+}
+
+/* BARRA DE ARRIBA */
+.arriba {
+    padding:0px 20px 0px 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:80px;
+}
+
+.titulos {
+    text-align: center;
+}
+
+.titulos h3 {
+    font-weight: 100 ;
+    letter-spacing: 3px;
+    font-size: 15px;
+}
+
+.titulos h1 {
+    font-size:25px;
+    letter-spacing: 3px;
+}
+
+.fa-bars {
+    font-size: 30px;
+    font-weight: 100px;
+    cursor: pointer;
+}
+
+/* MENU */
+
+.menu nav {
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding-top: 10px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid grey;
+    margin: 15px 70px 15px 70px;
+}
+
+.menu .liinicio {
+    margin-top: 100px;
+}
+
+.menu .lifinal {
+    border-bottom: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: grey;
+    transition: .4s;
+    letter-spacing: 3px;
+}
+
+.menu a:hover {
+    color: coral;
+    font-size: 16px;
+
+}
+
+.menu {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+
+}
+
+.menu .fa-times {
+    font-size: 30px;
+    padding: 5px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    color: grey;
+    font-weight: 100;
+    transition: all .5s;
+}
+
+.menu .fa-times:hover{
+    font-size: 40px;
+}
+
+.aparecemenu{
+    display: block;
+}
+
+/* CENTRAL PRINCIPAL */
+
+.principal {
+    margin-top: 10px;
+    background-image: url(../img/2.jpg);
+    background-size: cover;
+    background-position:center;
+    text-align: center;
+    color: white;
+}
+
+.principal .opacidad {
+    background-color: rgba(0, 10, 10, .4);
+}
+
+.txt {
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+.txt h2{
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-size: 15px;
+    padding:  50px 20% 0% 20%;
+
+}
+
+.txt h1{
+    font-size: 70px;
+    margin-top: 0;
+    padding-top: 0%;
+    margin-bottom: 30px;
+
+}
+
+
+.principal a{
+    background-color: white;
+    padding: 15px 25px;
+    color:black;
+    text-decoration: none;
+    font-weight: 200;
+    transition: .7s;
+}
+
+.principal a:hover{
+    background-color: black;
+    color: white;
+}
+
+/* ABAJO DE TODO */
+
+.abajo, .abajo2, .abajo3 {
+    padding: 20px;
+}
+
+.nos, .ser, .cont {
+    text-align: center;
+    height: auto;
+    padding: 15px 50px;
+    
+}
+
+.ser {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.0), rgba(245, 245, 245, 1)), url(../img/3.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    
+}
+
+
+
+
+/* PARA TABLET */
+
+@media(min-width:640px)  {
+    /*ESTE CÓDIGO ES PARA AGRANDAR LAS LETRAS, NO CAMBIA EN NADA EL MENÚ, SI GUSTAN PUEDEN BORRARLO NOrMAL*/
+.arriba {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.txt h2{
+    font-size: 25px;
+    padding-top:  50px; 
+
+    }
+.txt h1{
+    font-size: 90px;
+
+}
+
+.txt a{
+     padding: 15px 25px;
+     font-size: 20px;;
+    }
+  } 
+
+
+/* PARA PC */
+
+@media(min-width:1020px){
+.txt h2 {
+     font-size: 30px;
+    padding:  90px 20% 0% 20%;
+    animation: scale-up-center 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;    
+
+}
+
+.txt h1 {
+    font-size: 100px;
+    animation: scale-up-center 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;    
+}
+
+.nos h2, .ser h2, .cont h2 {
+    font-size: 50px;
+}
+
+.principal a {
+    padding: 15px 30px;
+    font-size: 25px;
+}
+
+.menu { 
+    position: initial;
+    display: initial;
+    
+}
+
+.menu li:hover {
+    -webkit-animation:alert 2s linear 0s 1 normal;
+-moz-animation:alert 2s linear 0s 1 normal;
+-ms-animation:alert 2s linear 0s 1 normal;
+animation:alert 2s linear 0s 1 normal;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu li{
+    margin-top: 0px;
+    border-bottom: none;
+    padding: 10px;
+    margin: 0 0;
+
+}
+
+.menu .liinicio{
+    margin-top: 0px;
+}
+.menu .lifinal{
+    padding-right: 20px;
+}
+
+.menu .fa {
+    display: none;
+}
+
+.bar .fa-bars {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+}
+
+
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+
+  /* OTRO KEY */
+
+  @-webkit-keyframes alert {
+    0%{ -webkit-transform: translateX(0); transform: translateX(0); }
+    5%{ -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+    10%{ -webkit-transform: translateX(10px); transform: translateX(10px); }
+    15%{ -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+    20%{ -webkit-transform: translateX(10px); transform: translateX(10px); }
+    25%{ -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+    30%{ -webkit-transform: translateX(10px); transform: translateX(10px); }
+    35%{ -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+    40%{ -webkit-transform: translateX(10px); transform: translateX(10px); }
+    45%{ -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+    50%{ -webkit-transform: translateX(0); transform: translateX(0); }
+    }
+    
+    @keyframes alert {
+    0%{ -ms-transform: translateX(0); transform: translateX(0); }
+    10%{ -ms-transform: translateX(-5px); transform: translateX(-5px); }
+    25%{ -ms-transform: translateX(5px); transform: translateX(5px); }
+    /* 15%{ -ms-transform: translateX(-10px); transform: translateX(-10px); }
+    20%{ -ms-transform: translateX(10px); transform: translateX(10px); }
+    25%{ -ms-transform: translateX(-10px); transform: translateX(-10px); }
+    30%{ -ms-transform: translateX(10px); transform: translateX(10px); }
+    35%{ -ms-transform: translateX(-10px); transform: translateX(-10px); }
+    40%{ -ms-transform: translateX(10px); transform: translateX(10px); }
+    45%{ -ms-transform: translateX(-10px); transform: translateX(-10px); } */
+    50%{ -ms-transform: translateX(0); transform: translateX(0); }
+    }
