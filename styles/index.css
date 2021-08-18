@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
   }
@@ -20,6 +24,10 @@ header {
     right: 0;
     background-color: white;
     z-index: 9999;
+}
+
+p {
+    font-size: 18px;
 }
 
 /* BARRA DE ARRIBA */
@@ -151,7 +159,7 @@ header {
 }
 
 .txt h1{
-    font-size: 70px;
+    font-size: 50px;
     margin-top: 0;
     padding-top: 0%;
     margin-bottom: 30px;
@@ -187,13 +195,142 @@ header {
 }
 
 .ser {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.0), rgba(245, 245, 245, 1)), url(../img/3.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.10), rgba(245, 245, 245, 1)), url(../img/3.jpg);
     background-size: cover;
     border-radius: 10px;
     
 }
 
+summary {
+    outline: none;
+    cursor: pointer;
+    font-size: 23px;
 
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  summary:before { 
+    content:" ";
+  }
+  
+  details[open] > summary:before {
+  content:" ";
+  }
+  
+  details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+    background-color: rgba(194, 194, 194, 0.51);
+    background-image: url(../img/4.jpg);
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  .nos details {
+    padding: 12px 30px;
+    display: flex;
+}
+
+/*FORMULARIO*/
+.final {
+    display:flex;
+  margin:1px 12px;
+  width:auto;
+  height: auto;
+  margin-top: 21px;
+  justify-content: center;
+  background-image: url(../img/4.jpg);
+  background-size: cover;
+}
+
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:1px;
+    text-shadow: 2px 2px 4px grey;
+    
+  }
+
+form {
+    margin: 20px;
+    width: 400px;
+    background-color: rgba(185, 185, 185, 0.3);
+    padding: 18px 8px;
+    border-radius: 8px 8px;
+    box-shadow: 0px 0px 1px 1px rgba(173, 173, 173, 0.65);
+  }
+  
+ 
+  input, textarea {
+    width:380px;
+    height:33px;
+    background:rgba(255, 255, 255, 0.62);
+    border:0px solid #d4d1d1;
+    padding:10px;
+    margin-top:5px;
+    font-size:14px;
+    font-family: 'Nunito', sans-serif;
+    color:rgb(61, 61, 61);
+    border-radius: 6px ;
+    box-shadow: 1px 1px 4px 1px #9a9a9a;
+    transition: all .3s ease-out;
+    
+  }
+  
+  textarea:hover {
+    background:#91909044;
+    box-shadow: 2px 2px 12px grey;
+  }
+  
+  input:hover {
+    background:#91909044;
+    box-shadow: 2px 2px 12px grey;
+  }
+  
+  textarea {
+    height:150px;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  #submit {
+    width:85px;
+    height:35px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+    border:0px solid #d4d1d1;
+  }
+
+/* EDITAR EL TEXTO DEL PIE */
+/* Div DEL PIE */
+.pie {
+    background-color: #525a63;
+    color: white;
+    width:100%;
+    height:80px;
+    margin: 0;
+    margin-top:0;
+    /* padding-top: 10px; */
+  } 
+
+.txtpie {
+    /* width: 265px; */
+    letter-spacing: 1px;
+    text-align: center;
+    transition: all .3s ease-out;
+  }
+  
+  h3.txtpie:hover {
+    transform: translate(0, 5px);
+  }
+  
+  #linkpie {
+    text-decoration: none;
+      color: rgb(255, 255, 255);
+  }
+  
+  /* FIN DEL TEXTO DEL PIE */
 
 
 /* PARA TABLET */
@@ -289,6 +426,15 @@ header {
     display: flex;
     justify-content: space-between;
 }
+/* form {
+    margin: 20px;
+    width: auto;
+    background-color: rgba(185, 185, 185, 0.3);
+    padding: 18px 8px;
+    border-radius: 8px 8px;
+    box-shadow: 0px 0px 1px 1px rgba(173, 173, 173, 0.65);
+} */
+
 }
 
 
@@ -313,6 +459,10 @@ header {
     }
   }
   
+  @keyframes sweep {
+    0%    {opacity: 0; transform: translateY(-10px)}
+    100%  {opacity: 1; transform: translateY(0)}
+  }
 
   /* OTRO KEY */
 
