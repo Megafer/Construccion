@@ -329,6 +329,12 @@ form {
     text-decoration: none;
       color: rgb(255, 255, 255);
   }
+
+  .fn {
+      text-decoration: none;
+      font-size: 15px;
+      color: rgb(235, 233, 233);
+  }
   
   /* FIN DEL TEXTO DEL PIE */
 
